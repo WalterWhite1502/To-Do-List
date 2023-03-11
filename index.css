@@ -1,0 +1,126 @@
+body{
+    background-color: darkcyan ;
+    background-size: 100%;
+}
+
+.content{
+    display: grid;
+    grid-row: 5fr 5fr;
+    gap: 30px;
+    width: 90%;
+    max-width: 34em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 8px;
+    border: none;
+}
+
+
+#to-do-input{
+    
+    position: relative;
+    background-color: #ffffff;
+    font-size: 20px;
+    padding: 1.8em 1.25em;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+    font-family:sans-serif;
+    font-weight: 700;
+}
+
+#item{
+    font-size: 17px;
+    padding: 0.8em 0.5em;
+    border:none;
+    border-bottom:1px solid black;
+    font-family:sans-serif;
+    font-weight: 500;
+}
+
+#item :focus{
+    border-color: black;
+}
+
+.button{
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    background-color: darkcyan;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-family:sans-serif;
+    font-weight: 600;
+    border: none;
+}
+
+.button:hover{
+    background-color:cadetblue;
+}
+
+.clear{
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    background-color: darkcyan;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-family:sans-serif;
+    font-weight: 600;
+    border: none;
+}
+
+.clear:hover{
+    text-decoration: underline;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px 25px;
+
+}
+
+#list i{
+    color: red;
+    cursor: pointer;
+}
+
+#list i:hover{
+    color: green;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
+    padding-top: 15px;
+}
+
+.input-control{
+    display: flex;
+    
+}
+
+.input-control textarea{
+    width: 100%;
+    border: none;
+    resize: none;
+    font-size: 17px;
+    padding-left: 5px;
+    font-family:sans-serif;
+    font-weight: 600;
+}
+
