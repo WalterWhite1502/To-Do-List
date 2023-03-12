@@ -4,9 +4,16 @@ const button = document.querySelector(".button")
 console.log(itemsArray)
 
 button.addEventListener("click", () => {
-  const item = document.querySelector("#item")
-  createItem(item)
+    const item = document.querySelector("#item")
+    if((item.value.trim()) == '' ){
+        alert("Enter correct task")
+    }
+    else{
+        createItem(item)
+    }
 })
+const x = " m"
+console.log((x.trim()) == '' )
 
 function displayItems(){
     let items = ""
